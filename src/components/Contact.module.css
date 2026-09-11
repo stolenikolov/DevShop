@@ -1,0 +1,76 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+.info {
+  border-top: 1px solid var(--color-line);
+  padding-top: 24px;
+}
+
+.infoTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-soft);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.details { display: flex; flex-direction: column; gap: 16px; }
+
+.detailRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--color-ink);
+}
+
+.detailIcon { width: 18px; height: 18px; color: var(--color-ink-soft); flex-shrink: 0; margin-top: 2px; }
+
+.availability {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-line);
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+}
+
+.form {
+  border-top: 1px solid var(--color-line);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 0.9rem; color: var(--color-ink-soft); }
+
+.field input, .field textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 8px 2px;
+  border: none;
+  border-bottom: 1px solid var(--color-line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-ink);
+  resize: vertical;
+  transition: border-color 0.15s ease;
+}
+
+.field input:focus, .field textarea:focus {
+  border-bottom-color: var(--color-accent);
+  outline: none;
+}
+
+.submit { align-self: flex-start; margin-top: 6px; }
+
+.error { font-size: 0.8rem; color: #c23b3b; }
+.success { font-size: 0.9rem; color: var(--color-accent); }
+
+@media (min-width: 860px) {
+  .grid { grid-template-columns: 0.8fr 1.2fr; gap: 64px; }
+}

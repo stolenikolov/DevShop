@@ -1,0 +1,63 @@
+.footer {
+  background: var(--color-surface-invert);
+  color: var(--color-on-invert);
+  border-top: 1px solid var(--color-line);
+  margin-top: 40px;
+  padding-top:35px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 104px 24px 48px;
+}
+
+.brandCol { max-width: 340px; }
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.wordmarkAccent { color: var(--color-accent); }
+
+.blurb {
+  margin-top: 18px;
+  color: var(--color-on-invert-soft);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.social { display: flex; gap: 18px; margin-top: 28px; }
+.social a {
+  color: var(--color-on-invert-soft);
+  display: inline-flex;
+  transition: color 0.15s ease;
+}
+.social a:hover { color: var(--color-on-invert); }
+
+.colTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-on-invert-soft);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.links { display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem; }
+.links a { text-decoration: none; color: var(--color-on-invert-soft); width: fit-content; }
+.links a:hover { color: var(--color-on-invert); }
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 22px 24px;
+}
+
+.rights { font-size: 0.8rem; color: var(--color-on-invert-soft); }
+
+@media (min-width: 720px) {
+  .top { grid-template-columns: 1.6fr 1fr 1fr; gap: 32px; }
+}
