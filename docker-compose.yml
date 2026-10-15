@@ -3,4 +3,3 @@ services:
     build: .
     cpus: 0.5
     mem_limit: 256m
-    restart: unless-stopped
